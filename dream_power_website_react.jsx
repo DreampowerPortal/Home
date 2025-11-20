@@ -1,23 +1,23 @@
 import React from "react";
 
 // DreamPower - Professional single-file React component
-// Focus: Multi-brand Tyres & Batteries only (Bilaspur)
-// Images: Unsplash CDN + local uploaded asset used as hero/logo
+// Focus: Exclusive Tyres & Batteries (Bilaspur)
+// All images use public Unsplash CDN for tyres and batteries
 
 export default function DreamPowerSite() {
   const tyres = [
     { id: 1, name: "All-Season Tyre", price: "₹3,499", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80" },
     { id: 2, name: "Performance Tyre", price: "₹5,199", img: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80" },
-    { id: 3, name: "Off-Road Tyre", price: "₹6,299", img: "https://images.unsplash.com/photo-1542367597-4a7e2f6a3c0b?auto=format&fit=crop&w=1200&q=80" }
+    { id: 3, name: "Off-Road Tyre", price: "₹6,299", img: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80" }
   ];
 
   const batteries = [
     { id: 1, name: "Lead-Acid 12V 60Ah", price: "₹4,299", img: "https://images.unsplash.com/photo-1563729784479-6f9ec8f3e4b4?auto=format&fit=crop&w=1200&q=80" },
     { id: 2, name: "SMF 12V 70Ah", price: "₹5,999", img: "https://images.unsplash.com/photo-1581092795363-4b4b6f6d5b6a?auto=format&fit=crop&w=1200&q=80" },
-    { id: 3, name: "Inverter Battery 150Ah", price: "₹9,499", img: "https://images.unsplash.com/photo-1581092924806-3d5b9b5f3f4d?auto=format&fit=crop&w=1200&q=80" }
+    { id: 3, name: "Inverter Battery 150Ah", price: "₹9,499", img: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=1200&q=80" }
   ];
 
-  // Use the uploaded screenshot as a local asset (will be served by the platform as a URL)
+  // Local uploaded asset (screenshot) - will be transformed to a public URL by the platform
   const localHero = "/mnt/data/2aeb3d47-2006-4d99-8aa9-82892c51c370.png";
 
   return (
@@ -28,7 +28,7 @@ export default function DreamPowerSite() {
             <img src={localHero} alt="DreamPower logo" className="w-14 h-14 object-cover rounded-full shadow-sm" />
             <div>
               <h1 className="text-xl font-bold">DreamPower</h1>
-              <p className="text-sm text-gray-600">Multi‑brand Tyres & Batteries • Bilaspur, Chhattisgarh</p>
+              <p className="text-sm text-gray-600">Exclusive Tyres & Batteries • Bilaspur, Chhattisgarh</p>
             </div>
           </div>
           <nav className="hidden md:flex gap-6 items-center text-sm text-gray-700">
@@ -45,22 +45,21 @@ export default function DreamPowerSite() {
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold">Quality Tyres & Batteries — Trusted in Bilaspur</h2>
-            <p className="mt-4 text-gray-600">DreamPower supplies genuine multi‑brand tyres and batteries, offers professional fitting, quick diagnostics and dependable aftercare.</p>
+            <p className="mt-4 text-gray-600">DreamPower specialises exclusively in tyres and batteries. Genuine brands, expert fitting, and reliable aftercare.</p>
 
             <div className="mt-6 flex gap-4">
-              <a href="#products" className="px-5 py-3 bg-indigo-600 text-white rounded shadow">Explore Products</a>
+              <a href="#products" className="px-5 py-3 bg-indigo-600 text-white rounded shadow">Explore Tyres & Batteries</a>
               <a href="#contact" className="px-5 py-3 border border-indigo-600 text-indigo-600 rounded">Book Service</a>
             </div>
 
             <ul className="mt-6 text-sm text-gray-500 space-y-1">
               <li>• On-site fitting & wheel balancing</li>
-              <li>• Battery testing & installation</li>
-              <li>• Genuine multi-brand parts (Amaron, Exide, MRF, CEAT, Apollo)</li>
+              <li>• Battery testing, replacement & installation</li>
+              <li>• Genuine multi-brand parts with warranty</li>
             </ul>
           </div>
 
           <div className="rounded-lg overflow-hidden shadow-lg">
-            {/* Local hero used to ensure image is present in the build */}
             <img src={localHero} alt="DreamPower shop" className="w-full h-64 object-cover" />
           </div>
         </section>
@@ -72,7 +71,7 @@ export default function DreamPowerSite() {
             <div className="p-6 bg-white rounded shadow">
               <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=60" alt="Tyre fitting" className="w-full h-32 object-cover rounded mb-3" />
               <h4 className="font-semibold">Tyre Sales & Fitting</h4>
-              <p className="mt-2 text-sm text-gray-600">New tyres, expert fitting, alignment and balancing.</p>
+              <p className="mt-2 text-sm text-gray-600">New tyres, professional fitting, alignment and balancing.</p>
             </div>
 
             <div className="p-6 bg-white rounded shadow">
@@ -82,9 +81,9 @@ export default function DreamPowerSite() {
             </div>
 
             <div className="p-6 bg-white rounded shadow">
-              <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=60" alt="Diagnostics" className="w-full h-32 object-cover rounded mb-3" />
-              <h4 className="font-semibold">Vehicle Diagnostics</h4>
-              <p className="mt-2 text-sm text-gray-600">Quick checks, jumpstart support and minor repairs.</p>
+              <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=60" alt="Tyre service" className="w-full h-32 object-cover rounded mb-3" />
+              <h4 className="font-semibold">Emergency Support</h4>
+              <p className="mt-2 text-sm text-gray-600">Jumpstarts, on-road assistance and quick repairs.</p>
             </div>
           </div>
         </section>
@@ -98,7 +97,7 @@ export default function DreamPowerSite() {
                 <img src={t.img} alt={t.name} className="w-full h-40 object-cover" />
                 <div className="p-4">
                   <h4 className="font-semibold">{t.name}</h4>
-                  <p className="mt-1 text-sm text-gray-600">Popular sizes & brands available</p>
+                  <p className="mt-1 text-sm text-gray-600">Available in multiple brands and sizes</p>
                   <div className="mt-3 flex items-center justify-between">
                     <div className="text-lg font-bold">{t.price}</div>
                     <button className="px-3 py-1 bg-indigo-600 text-white rounded">Enquire</button>
@@ -112,7 +111,7 @@ export default function DreamPowerSite() {
                 <img src={b.img} alt={b.name} className="w-full h-40 object-cover" />
                 <div className="p-4">
                   <h4 className="font-semibold">{b.name}</h4>
-                  <p className="mt-1 text-sm text-gray-600">Genuine, warranty-backed options</p>
+                  <p className="mt-1 text-sm text-gray-600">Genuine batteries with warranty options</p>
                   <div className="mt-3 flex items-center justify-between">
                     <div className="text-lg font-bold">{b.price}</div>
                     <button className="px-3 py-1 bg-indigo-600 text-white rounded">Enquire</button>
